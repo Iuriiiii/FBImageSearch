@@ -68,7 +68,7 @@ End If
 
 You might  use the `Delete` instruction to free the memory of `ìmage1_bytes`, `image2_bytes` members and the return of the `SearchImageEx`.
 
-##### Licence
+##### Licence MIT
 ```
 Copyright 2022 Oscar Casas Alexander
 
