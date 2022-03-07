@@ -26,7 +26,8 @@ Type SEARCH_IMAGE_DATA_EX
     	transparency As Long = TRANSPARENCY_VALUE ' The transparency value, default green
     	algorithm As SEARCH_IMAGE_ALGORITHM ' The search algorithm, default SEARCH_IMAGE_ALGORITHM.standard
     	As Double pixel_tolerance,image_tolerance ' The image tolerance and pixel comparison tolerance
-End Type```
+End Type
+```
 
 We can get the array of byte of an image  with `GetArrayFromImageFile(image_path)` function, or from a window with `GetArrayFromHWND([window_handle=desktop])`.  With this last function will be your job find out the correct window handle of the window that you want scan, by default the scan window is the whole desktop, being all its parameters optionals.
 
@@ -41,7 +42,8 @@ Type SEARCH_IMAGE_RETURN
 	As Long middle_y ' The middle Y location of the image
 	As Long width ' The image width
 	As Long height ' The image height
-End Type```
+End Type
+```
 
 Knowing this, we can do the following:
 
@@ -61,6 +63,7 @@ If check(returnData) Then
 	If returnData.found Then
 		' Do Something
 	End If
-End If```
+End If
+```
 
 You might  use the `Delete` instruction to free the memory of `ìmage1_bytes`, `image2_bytes` members and the return of the `SearchImageEx`.
