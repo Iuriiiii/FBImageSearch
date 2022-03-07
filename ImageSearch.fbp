@@ -1,0 +1,19 @@
+[Project]
+Version=3
+Description=Search Image from Desktop
+Api=fb (FreeBASIC)
+[Make]
+Current=1
+1=Windows dll,fbc -s gui -dll -export
+Recompile=2
+Module=Module Build,fbc -c
+[TabOrder]
+[File]
+1=ImageSearch.bas
+2=ImageSearch.bi
+[BreakPoint]
+1=
+2=
+[FileInfo]
+1=0,430,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2=0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
