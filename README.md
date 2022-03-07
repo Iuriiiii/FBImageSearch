@@ -63,7 +63,8 @@ If check(returnData) Then
 	If returnData.found Then
 		' Do Something
 	End If
-End If```
+End If
+```
 
 You might  use the `Delete` instruction to free the memory of `ìmage1_bytes`, `image2_bytes` members and the return of the `SearchImageEx`.
 
