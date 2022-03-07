@@ -32,6 +32,8 @@ End Type
 We can get the array of byte of an image  with `GetArrayFromImageFile(image_path)` function, or from a window with `GetArrayFromHWND([window_handle=desktop])`.  With this last function will be your job find out the correct window handle of the window that you want scan, by default the scan window is the whole desktop, being all its parameters optionals.
 
 ###### The SEARCH_IMAGE_RETURN structure
+This structure contains the data of the found image.
+
 ```vb
 Type SEARCH_IMAGE_RETURN
 	As Integer error
@@ -51,6 +53,8 @@ Knowing this, we can do the following:
 Function check(returnData As SEARCH_IMAGE_RETURN Ptr) As Integer
 	Return Not (returnData >= 0 and returnData <= 10) 
 End Function
+
+ImageSearch_Start()
 
 Dim searchData As SEARCH_IMAGE_DATA_EX
 
